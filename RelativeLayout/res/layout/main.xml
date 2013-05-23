@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#0000FF"
+    android:padding="10px"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/tv01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="请输入:" />
+    <EditText 
+        android:id="@+id/txt01"  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv01"
+        />
+    <Button 
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt01"
+        android:layout_alignParentRight="true"
+        android:text="OK"
+        />
+    <Button 
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt01"
+        android:layout_toLeftOf="@id/btn1"
+        android:layout_marginRight="30dp"
+        android:text="Cancel"
+        />
+
+    <!--<TextView
+        android:id="@+id/txt01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF0000"
+        android:text="111" />
+    
+     <TextView
+        android:id="@+id/txt02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txt01"
+        android:background="#00FF00"
+        android:text="222" />  -->
+
+</RelativeLayout>
